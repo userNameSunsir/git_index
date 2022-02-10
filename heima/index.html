@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scale=no">
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- index样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <title>黑马面面</title>
+</head>
+
+<body>
+    <section class="wrap">
+        <!-- 头部文字 -->
+        <header class="header">黑马面面</header>
+        <!-- nav部分 -->
+        <nav class="nav">
+            <a href="#" class="it">
+                <img src="./icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#" class="it">
+                <img src="./icons/icon2.png" alt="">
+                <span>笔记</span>
+            </a>
+            <a href="#" class="it">
+                <img src="./icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#" class="it">
+                <img src="./icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#" class="it">
+                <img src="./icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#" class="it">
+                <img src="./icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- 广告部分 -->
+        <section class="news">
+            <img src="./img/go.png" alt="">
+        </section>
+    </section>
+    <!-- 就业指导模块 -->
+    <section class="content">
+        <!-- 头部 -->
+        <div class="con-hd">
+            <h4>
+                <span><img src="./icons/i2.png" alt=""></span> 就业指导
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+        <!-- 轮播 -->
+        <div class="get_job_focus">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/2.jpg" alt=""></a>
+                        <p class="pi">老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/pic.png" alt=""></a>
+                        <p class="pi">老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/3.jpg" alt=""></a>
+                        <p class="pi">老师教你应对面试技巧</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows 根据需求这个代码放到 container外面 添加左右箭头-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- 充电学习模块 -->
+    <section class="content study_cont">
+        <!-- 头部 -->
+        <div class="con-hd">
+            <h4>
+                <span><img src="./icons/i1.png" alt=""></span> 充电学习
+            </h4>
+            <a href="#" class="more">更多>></a>
+        </div>
+        <!-- 充电学习 -->
+        <div class="study">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper study_is">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/pic1.png" alt=""></a>
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/pic2.png" alt=""></a>
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>556人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/pic1.png" alt=""></a>
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>156人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./img/pic2.png" alt=""></a>
+                        <h5>说低调英语，告别中式英语</h5>
+                        <p>556人学习</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 底部固定 -->
+    <footer class="footer">
+        <a href="#">
+            <img src="./icons/home.png" alt="">
+            <p>首页</p>
+        </a>
+        <a href="#">
+            <img src="./icons/net.png" alt="">
+            <p>技术面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/ms.png" alt="">
+            <p>模拟面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/user.png" alt="">
+            <p>我的主页</p>
+        </a>
+    </footer>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        // 第一个
+        (function() {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+        // 第二个
+        (function() {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2.4,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        })()
+    </script>
+</body>
+
+</html>
